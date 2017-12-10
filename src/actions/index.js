@@ -18,7 +18,7 @@ export const toggleTodo = id => {
 
 export const setVisibilityFilter = filter => {
     return {
-        type: constants.setVisibilityFilter,
+        type: constants.SET_VISIBILITY_FILTER,
         filter
     }
 }
