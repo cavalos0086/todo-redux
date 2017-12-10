@@ -3,4 +3,13 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-let store = createStore();
+import todoApp from './reducers';
+
+let store = createStore(todoApp);
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
